@@ -69,4 +69,6 @@ async def rainbowrole(role):
         await asyncio.sleep(10)
         Client.loop.create_task(rainbowrole(rainbowrolename))   
 
-Client.run("ODA4NDE5MDQ1NDgwMzMzMzMy.YCGQ6A.Mfdq2A5ld-Pvarku7PmNsgzF8ik", bot = True)
+token = os.environ.get('BOT_TOKEN')
+
+Client.run(str(token))
