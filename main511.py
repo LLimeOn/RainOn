@@ -34,7 +34,7 @@ async def on_ready():
 @Client.command()
 async def help(ctx):
     emb1 = discord.Embed(title="Информация о командах", color=random.randint(1, 16777216))
-    emb1.add_field(name = f"`{PREFIX}rainbowrole` : ", value="Запускает изменение роли", inline=False)
+    emb1.add_field(name = f"`{PREFIX}rainbowrole` : ", value="Запускает изменение цвета роли || Starts changing the color of the role", inline=False)
     await ctx.send(embed = emb1)
 
 serverid = 521678450818547714
